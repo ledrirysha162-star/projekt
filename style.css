@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b0b0f;
+    color: white;
+}
+
+nav {
+    background-color: #111118;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #252530;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #15151f;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 20px;
+    color: #bbbbbb;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+section p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+a {
+    transition: 0.2s;
+}
+
+header a,
+article a {
+    display: inline-block;
+    background-color: #00aaff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+header a:hover,
+article a:hover {
+    background-color: #0088cc;
+}
+
+section > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+article {
+    background-color: #15151f;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #252530;
+}
+
+article:hover {
+    border-color: #00aaff;
+}
+
+article img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+article h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+form {
+    max-width: 600px;
+    background-color: #15151f;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #252530;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background-color: #0b0b0f;
+    color: white;
+    border: 1px solid #33333f;
+    border-radius: 6px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0088cc;
+}
+
+footer {
+    background-color: #111118;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    border-top: 1px solid #252530;
+}
+
+footer p {
+    color: #888888;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    section > div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    section > div {
+        grid-template-columns: 1fr;
+    }
+}
